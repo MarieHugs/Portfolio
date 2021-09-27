@@ -1,0 +1,13 @@
+
+.btn{
+    background-color: var(--color-secondary);
+}
+
+.btn.btn__large {
+    padding: 20px 30px;
+    color: var(--color-white);
+
+    &:hover{
+        background-color: var(--color-secondary-darker);
+    }
+}
