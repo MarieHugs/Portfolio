@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr" >
 <head>
     <meta charset="UTF-8">
     <title>Marie-Eve Lamontagne</title>
@@ -9,72 +9,43 @@
     <script src="scripts/main.js" defer></script>
 </head>
 <body>
-    <header >
-
-
-        <nav class="nav-principale">
-                <div class="wrapper">
-                    <span class="logo"><a href="">MEL</a></span>
-                    <ul>
-                        <li><a href="">Accueil</a></li>
-                        <li><a href="">Projets</a></li>
-                        <li><a href="">À propos</a></li>
-                        <li><a href="">Contact</a></li>
-                    </ul>
-                </div>
-        </nav>
-
-        <nav class="nav-principale-mobile">
-
-            <div class="menu-mobile">
-
-                <div class="wrapper">
-                    <span class="logo"><a href="">MEL</a></span>
-
-                    <div class="menu-hamburger">
-
-                        <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 0H23.3333V2.91667H0V0ZM5.83333 7.29167H23.3333V10.2083H5.83333V7.29167ZM13.125 14.5833H23.3333V17.5H13.125V14.5833Z" fill="#444444"/>
-                        </svg>
-
-                        <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M9.84906 8.75L16.8592 0.351611C16.9767 0.21204 16.8779 0 16.6963 0H14.5652C14.4397 0 14.3195 0.0563649 14.2367 0.152991L8.45506 7.08052L2.6734 0.152991C2.59328 0.0563649 2.47311 0 2.34492 0H0.213855C0.0322602 0 -0.0665489 0.21204 0.0509536 0.351611L7.06105 8.75L0.0509536 17.1484C0.024632 17.1795 0.00774565 17.2175 0.00229878 17.258C-0.00314809 17.2985 0.00307331 17.3397 0.020225 17.3767C0.0373767 17.4137 0.0647382 17.445 0.0990604 17.4669C0.133383 17.4887 0.173224 17.5002 0.213855 17.5H2.34492C2.47044 17.5 2.59061 17.4436 2.6734 17.347L8.45506 10.4195L14.2367 17.347C14.3168 17.4436 14.437 17.5 14.5652 17.5H16.6963C16.8779 17.5 16.9767 17.288 16.8592 17.1484L9.84906 8.75Z" fill="#444444"/>
-                        </svg>
-
-                    </div>
-                </div>
-
-                <div class="options-menu-mobile">
-                    <div class="wrapper">
-                        <ul>
-                            <li><a href="">Accueil</a></li>
-                            <li><a href="">Projets</a></li>
-                            <li><a href="">À propos</a></li>
-                            <li><a href="">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-
-        </nav>
-
+    <header class="header" data-component="Header" data-autohide="Hide" data-pourcentage="0.05">
+        <div class="wrapper">
+            <a href="#" class="header__brand">
+                MEL
+            </a>
+            <nav class="nav-primary">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="projets.html">Projets</a></li>
+                    <li><a href="apropos.html">À propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="header__toggle js-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
     </header>
 
-    <div class="hero">
+    <div class="hero__acceuil">
         <div class="wrapper">
-            <div class="titres">
-                <h1>Marie-Eve Lamontagne</h1>
-                <h3>Aspirante Développeuse Web</h3>
+            <div class="contenu__accueil">
+                <div>
+                    <h1>Marie-Eve Lamontagne</h1>
+                    <h3>Aspirante Développeuse Web</h3>
+                </div>
 
+                <img class="img__mobile" src="assets/images/hero-acceuil.png" alt="">
 
-                <img src="assets/images/acceuil_me.png" alt="">
-
-                <div class="decription">
-                    <p>Mes compéteces en développement front-end s’améliorent chaque jour.</p>
-                <a href="" class="btn btn__large">Mes Projets</a>
+                <div class="decription__acceuil">
+                    <p>Mes compéteces en développement front-end s’améliorent chaque jour!</p>
+                    <a href="" class="btn btn__large btn__accueil">Mes Projets</a>
                 </div>
             </div>
+            <img class="img__desktop" src="assets/images/hero-acceuil.png" alt="">
             
         </div>
     </div>

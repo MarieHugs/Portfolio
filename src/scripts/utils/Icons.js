@@ -2,6 +2,8 @@ export default class Icons {
   static load(path) {
     path = path || 'assets/icons.svg';
 
+    console.log('yup i work!')
+
     fetch(path)
       .then((res) => {
         return res.text();

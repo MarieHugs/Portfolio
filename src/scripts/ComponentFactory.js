@@ -1,22 +1,11 @@
-import Carousel from './components/Carousel';
 import Header from './components/Header';
-import Scrolly from './components/Scrolly';
-import Modal from './components/Modal';
-import Video from './components/Video';
-import Form from './components/Form';
-import Snackbar from './components/Snackbar';
+
 
 export default class ComponentFactory {
   constructor() {
     this.componentInstances = [];
     this.componentList = {
-      Carousel,
       Header,
-      Scrolly,
-      Modal,
-      Video,
-      Form,
-      Snackbar,
     };
     this.init();
   }
