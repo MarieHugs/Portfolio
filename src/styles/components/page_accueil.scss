@@ -2,36 +2,35 @@
     h3 {
         margin-left: 50px;
         @media screen and (min-width: $breakpoint-md) {
-            margin: 10px;
+            margin-left: 50px;
         }
     }
 
     img {
-        margin-top: -150px;
+        margin-top: -50px;
     }
     .img__mobile {
         @media screen and (min-width: $breakpoint-md) {
             display: none;
         }
     }
-    .decription__acceuil {
-        margin-top: -150px;
-        p {
-            font-size: var(--font-size-h4);
-            text-align: right;
-            font-weight: 600;
+    .description__acceuil {
+        margin-top: -50px;
+        text-align: left;
 
-            margin: 10px;
+        p {
+            text-align: end;
+            font-weight: 600;
         }
     }
-    .btn__acceuil {
-        display: block;
+    .btn__accueil {
+        display: inline-block;
         font-weight: bold;
-        font-size: var(--font-size-h4);
-        margin-left: 50px;
+        margin-top: 20px;
+
 
         @media screen and (min-width: $breakpoint-md) {
-            margin-top: 300px;
+            margin-top: 200px;
         }
     }
 
@@ -42,13 +41,6 @@
 }
 
 .hero__acceuil .wrapper {
-
-    .description__acceuil{
-        margin-top: -150px;
-        text-align: end;
-        margin-right: 100px;
-
-    }
 
     .img__desktop {
         display: none;
@@ -76,12 +68,6 @@
         }
         .description__acceuil {
             margin-top: 100px;
-
-            .btn__accueil {
-                display: inline-block;
-                margin-top: 200px;
-                text-align: center;
-            }
         }
 
         p {
