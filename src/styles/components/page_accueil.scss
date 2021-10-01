@@ -42,6 +42,14 @@
 }
 
 .hero__acceuil .wrapper {
+
+    .description__acceuil{
+        margin-top: -150px;
+        text-align: end;
+        margin-right: 100px;
+
+    }
+
     .img__desktop {
         display: none;
 
@@ -66,10 +74,11 @@
             top: -50px;
             right: -400px;
         }
-        .decription__acceuil {
+        .description__acceuil {
             margin-top: 100px;
 
-            .btn__acceuil {
+            .btn__accueil {
+                display: inline-block;
                 margin-top: 200px;
                 text-align: center;
             }
