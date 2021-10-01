@@ -14,7 +14,7 @@
 
 // ELEMENTS
 // Modification des styles généraux de la page. Ce sont les styles qui seront généralement hérités par les éléments de la page.
-@import url('https://fonts.googleapis.com/css2?family=Exo:wght@200;300;400;500;600;700;800;900&family=Tangerine:wght@400;700&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@200;300;400;500;600;700;800;900&family=Tangerine:wght@400;700&display=swap');
 @import 'elements/body';
 @import 'elements/headings';
 @import 'elements/links';
@@ -26,8 +26,7 @@
 @import 'components/header.scss';
 @import 'components/bouton.scss';
 @import 'components/page_accueil.scss';
-
-
+@import 'components/footer.scss';
 
 // UTILITIES
 // Utilitaires et classes auxiliaires avec possibilité de remplacer tout ce qui précède, par exemple masquer les éléments de la page
