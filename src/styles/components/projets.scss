@@ -1,0 +1,12 @@
+.articles article:nth-child(odd) {
+    display: flex;
+    flex-direction: column;
+
+    img{
+        order: -1;
+        margin-top: -50px;
+        margin-bottom: -50px;
+    }
+
+}
+
