@@ -8,19 +8,27 @@
     <script src="scripts/main.js" defer></script>
 </head>
 <body>
-
-  <header>
+  <header
+  class="header"
+  data-component="Header"
+  data-autohide="Hide"
+  data-pourcentage="0.05"
+>
   <div class="wrapper">
-    <nav>
-      <span class="logo"><a href="">MEL</a></span>
-      <ul>
-
-        <li><a href="">Accueil</a></li>
-        <li><a href="">Projets</a></li>
-        <li><a href="">À propos</a></li>
-        <li><a href="">Contact</a></li>
-      </ul>
-    </nav>
+      <a href="#" class="header__brand"> MEL </a>
+      <nav class="nav-primary">
+          <ul>
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="projets.html">Projets</a></li>
+              <li><a href="apropos.html">À propos</a></li>
+              <li><a href="contact.html">Contact</a></li>
+          </ul>
+      </nav>
+      <button class="header__toggle js-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+      </button>
   </div>
 </header>
 

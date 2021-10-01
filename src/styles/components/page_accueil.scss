@@ -1,21 +1,22 @@
-.contenu__accueil{
-    .img__desktop{
-        display: none;
-    }
-    h3{
+.contenu__accueil {
+    h3 {
         margin-left: 50px;
-        @media screen and (min-width: $breakpoint-md){
+        @media screen and (min-width: $breakpoint-md) {
             margin: 10px;
-
         }
     }
 
-    img{
+    img {
         margin-top: -150px;
     }
-    .decription__acceuil{
+    .img__mobile {
+        @media screen and (min-width: $breakpoint-md) {
+            display: none;
+        }
+    }
+    .decription__acceuil {
         margin-top: -150px;
-        p{
+        p {
             font-size: var(--font-size-h4);
             text-align: right;
             font-weight: 600;
@@ -23,13 +24,13 @@
             margin: 10px;
         }
     }
-    .btn__acceuil{
+    .btn__acceuil {
         display: block;
         font-weight: bold;
         font-size: var(--font-size-h4);
         margin-left: 50px;
-        
-        @media screen and (min-width: $breakpoint-md){
+
+        @media screen and (min-width: $breakpoint-md) {
             margin-top: 300px;
         }
     }
@@ -37,53 +38,46 @@
     @media screen and (min-width: $breakpoint-md) {
         display: flex;
         flex-direction: column;
-        
-
-        .img__mobile{
-            display: none;
-        }
-
-        .img__desktop{
-            display: block;
-        }
-
     }
-
 }
 
+.hero__acceuil .wrapper {
+    .img__desktop {
+        display: none;
 
-.hero__acceuil .wrapper{
-    @media screen and (min-width: $breakpoint-md){
+        @media screen and (min-width: $breakpoint-md) {
+            display: block;
+        }
+    }
+    @media screen and (min-width: $breakpoint-md) {
         display: flex;
         justify-content: space-between;
 
         position: relative;
-        
-        h1{
+
+        h1 {
             margin-bottom: 0;
             margin-top: 50px;
         }
 
-        img{
+        img {
             position: absolute;
             z-index: -1;
             top: -50px;
             right: -400px;
         }
-        .decription__acceuil{
+        .decription__acceuil {
             margin-top: 100px;
 
-             .btn__acceuil{
+            .btn__acceuil {
                 margin-top: 200px;
                 text-align: center;
             }
         }
 
-        p{
+        p {
             text-align: left;
             width: 500px;
         }
-       
     }
-
 }

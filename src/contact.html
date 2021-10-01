@@ -1,64 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Contact</title>
-    <link rel="stylesheet" href="styles/main.css" />
+    <head>
+        <meta charset="UTF-8" />
+        <title>Contact</title>
+        <link rel="stylesheet" href="styles/main.css" />
 
-    <script src="scripts/main.js" defer></script>
-</head>
-<body>
-  <header>
-  <div class="wrapper">
-    <nav>
-      <span class="logo"><a href="">MEL</a></span>
-      <ul>
+        <script src="scripts/main.js" defer></script>
+    </head>
+    <body>
+        <header
+            class="header"
+            data-component="Header"
+            data-autohide="Hide"
+            data-pourcentage="0.05"
+        >
+            <div class="wrapper">
+                <a href="#" class="header__brand"> MEL </a>
+                <nav class="nav-primary">
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="projets.html">Projets</a></li>
+                        <li><a href="apropos.html">À propos</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <button class="header__toggle js-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </header>
+        <section class="contact">
+            <div class="wrapper">
+                <h1>Contact</h1>
 
-        <li><a href="">Accueil</a></li>
-        <li><a href="">Projets</a></li>
-        <li><a href="">À propos</a></li>
-        <li><a href="">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+                <div class="contenu-contact">
+                    <div class="contactez-moi">
+                        <div class="info">
+                            <h3>Contactez-moi</h3>
+                            <p>#:514-770-3270</p>
+                            <p>@: melamontagne.dev@gmail.com</p>
+                        </div>
+                        <button><a href="">Télécharger mon CV</a></button>
+                    </div>
 
-  <section class="contact">
-    <div class="wrapper">
-      <h1>Contact</h1>
+                    <div class="formulaire">À COMPLÉTÉ....</div>
+                </div>
+            </div>
+        </section>
 
-      <div class="contenu-contact">
-        <div class="contactez-moi">
-        <div class="info">
-          <h3>Contactez-moi</h3>
-          <p>#:514-770-3270</p>
-          <p>@: melamontagne.dev@gmail.com</p>
-        </div>
-        <button><a href="">Télécharger mon CV</a></button>
-      </div>
+        <footer>
+            <div class="wrapper">
+                <div class="medias">
+                    <icon>Facebook</icon>
+                    <icon>Behance</icon>
+                </div>
 
-        <div class="formulaire">
+                <hr />
 
-          À COMPLÉTÉ....
-
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <div class="wrapper">
-      <div class="medias">
-        <icon>Facebook</icon>
-        <icon>Behance</icon>
-      </div>
-
-      <hr>
-
-      <p class="copyright">© 2021 - Marie-Eve Lamontagne - Développeuse web</p>
-
-    </div>
-  </footer>
-</body>
+                <p class="copyright">
+                    © 2021 - Marie-Eve Lamontagne - Développeuse web
+                </p>
+            </div>
+        </footer>
+    </body>
 </html>

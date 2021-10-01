@@ -1,9 +1,8 @@
 /* ==========================================================================
    header / components
    ========================================================================== */
-   header {
+header {
     background: var(--color-primary);
-    padding: 10px 0;
     position: sticky;
     top: 0;
     left: 0;
@@ -89,7 +88,7 @@
 /*
    nav-primary
    ========================================================================== */
-.header__brand{
+.header__brand {
     z-index: 2;
     font-family: var(--font-secondary);
     font-weight: bold;
@@ -154,7 +153,7 @@
 }
 
 .nav-primary__item {
-   // @include fluid-type(32px, 60px);
+    // @include fluid-type(32px, 60px);
     // color: var(--color-white);
     text-transform: uppercase;
     padding: 0 20px;
