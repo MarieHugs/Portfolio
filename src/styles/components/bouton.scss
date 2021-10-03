@@ -1,6 +1,6 @@
-
-.btn{
+.btn {
     background-color: var(--color-secondary);
+    display: inline-block;
 }
 
 .btn.btn__large {
@@ -11,9 +11,7 @@
         padding: 20px 30px;
     }
 
-    &:hover{
+    &:hover {
         background-color: var(--color-secondary-darker);
     }
 }
-
-
