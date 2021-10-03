@@ -1,0 +1,114 @@
+.intro_apropos {
+    h1 {
+        text-align: center;
+    }
+    .contenu-propos {
+        margin-top: 50px;
+    }
+    .titre_contact {
+        h4 {
+            margin-bottom: 0;
+        }
+        p {
+            margin: 0;
+            font-weight: 600;
+        }
+    }
+    .descrp_1 {
+        margin-top: 50px;
+        width: 70%;
+        margin-left: auto;
+    }
+}
+
+.accent-texte {
+    color: var(--color-secondary);
+}
+
+.qualites {
+    position: relative;
+    .wrapper {
+        margin: 0;
+    }
+    img {
+        position: absolute;
+        object-fit: cover;
+        top: -20px;
+        left: -160px;
+        z-index: -1;
+
+        width: 450px;
+    }
+    .contenu-qualites {
+        margin-top: 50px;
+
+        margin-left: auto;
+    }
+
+    .qualite1 {
+        width: 80%;
+        margin-left: auto;
+    }
+    .qualite2,
+    .qualite3 {
+        width: 60%;
+        margin-left: auto;
+    }
+    .qualite4 {
+        width: 70%;
+        margin-left: auto;
+    }
+
+    .qualite {
+        h5 {
+            margin: 0;
+            color: var(--color-secondary);
+        }
+        svg {
+            height: 50px;
+            width: 100%;
+            margin-top: -10px;
+        }
+        p {
+            margin: 0 -10px 20px auto;
+            width: 70%;
+            font-size: 1rem;
+        }
+    }
+}
+
+.connaissances {
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    p {
+        width: 70%;
+        margin-bottom: 100px;
+    }
+    .groupe-connaissance {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        margin-bottom: 50px;
+
+        h4 {
+            margin: 10px 0;
+            color: var(--color-secondary);
+        }
+
+        ul {
+            margin: 0;
+            padding: 0 0 0 20px;
+            list-style-type: none;
+        }
+        li::before {
+            content: '•'; /* Insert content that looks like bullets */
+            height: 2px;
+            width: 2px;
+            padding-right: 8px;
+            color: var(--color-black);
+        }
+    }
+}
