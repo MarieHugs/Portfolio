@@ -20,7 +20,9 @@ h1 {
 }
 
 h2 {
+    font-family: var(--font-secondary);
     font-size: var(--font-size-h2);
+    line-height: 1;
 }
 
 h3 {

@@ -7,8 +7,11 @@ footer {
         align-items: center;
 
         hr {
-            width: 75%;
+            width: 90%;
             border-color: var(--color-black);
+        }
+        .copyright {
+            font-size: var(--font-size-small);
         }
     }
 }
