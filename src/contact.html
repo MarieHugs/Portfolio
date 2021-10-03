@@ -32,6 +32,7 @@
                 </button>
             </div>
         </header>
+
         <section class="contact">
             <div class="wrapper">
                 <h1>Contact</h1>
@@ -40,15 +41,18 @@
                     <div class="contactez-moi">
                         <div class="info">
                             <h3>Contactez-moi</h3>
-                            <p>#:514-770-3270</p>
-                            <p>@: melamontagne.dev@gmail.com</p>
+                            <p># : 514-770-3270</p>
+                            <p>@ : melamontagne.dev@gmail.com</p>
                         </div>
                         <a class="btn btn__large btn__cv" href=""
-                            >Télécharger mon CV</a
-                        >
+                            >Télécharger mon CV
+                            <svg class="icon icon--sm icon--stroke">
+                                <use xlink:href="#icon-arrow_down"></use>
+                            </svg>
+                        </a>
                     </div>
 
-                    <div class="form">
+                    <div class="formulaire">
                         <form
                             action=""
                             class="form"
@@ -73,27 +77,29 @@
                                         type="email"
                                         name="email"
                                         id="email"
-                                        placeholder="email"
+                                        placeholder="Courriel"
                                         required
                                     />
                                 </div>
 
                                 <div class="input">
-                                    <input
+                                    <textarea
                                         class="input__element"
-                                        type="text"
                                         name="message"
                                         id="message"
                                         placeholder="Message"
                                         required
-                                    />
+                                    ></textarea>
                                 </div>
                             </fieldset>
 
                             <footer class="form__footer">
                                 <a class="btn btn__large btn__form" href=""
-                                    >Envoyer</a
-                                >
+                                    >Soumettre
+                                    <svg class="icon icon--md icon--stroke">
+                                        <use xlink:href="#icon-arrow"></use>
+                                    </svg>
+                                </a>
                             </footer>
                         </form>
                     </div>
