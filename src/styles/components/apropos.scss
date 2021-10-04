@@ -27,16 +27,24 @@
 
 .qualites {
     position: relative;
+
+    margin-top: 50px;
     .wrapper {
         margin: 0;
     }
     img {
         position: absolute;
         object-fit: cover;
-        top: -20px;
-        left: -160px;
+        top: -15%;
+        left: -40%;
         z-index: -1;
-
+        @media screen and (min-width: $breakpoint-sm) {
+            top: -25%;
+            left: -15%;
+        }
+        @media screen and (min-width: $breakpoint-md) {
+            left: 0;
+        }
         width: 450px;
     }
     .contenu-qualites {
@@ -48,21 +56,44 @@
     .qualite1 {
         width: 80%;
         margin-left: auto;
+        
+        &.qualite h5{
+            @media screen and (min-width: $breakpoint-sm) {
+              margin-left: 10%;
+            }
+
+            @media screen and (min-width: $breakpoint-md) {
+                margin-left: 18%;
+            }
+            
+        }
     }
     .qualite2,
     .qualite3 {
         width: 60%;
         margin-left: auto;
+        &.qualite h5{
+            @media screen and (min-width: $breakpoint-md) {
+                margin-left: 8%;
+            }
+        }
     }
     .qualite4 {
         width: 70%;
         margin-left: auto;
+
+        &.qualite h5{
+            @media screen and (min-width: $breakpoint-md) {
+                margin-left: 13%;
+            }
+        }
     }
 
     .qualite {
         h5 {
             margin: 0;
             color: var(--color-secondary);
+            
         }
         svg {
             height: 50px;
@@ -78,13 +109,29 @@
 }
 
 .connaissances {
-    margin-top: 50px;
+    margin-top: 10%;
     margin-bottom: 50px;
+    @media screen and (min-width: $breakpoint-sm) {
+        margin-top: 25%;
+    }
 
     p {
         width: 70%;
-        margin-bottom: 100px;
+        margin-bottom: 50px;
     }
+    .flex_connaissance{
+        @media screen and (min-width: $breakpoint-sm) {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+
+
+            .connaissance1{
+                width: 100%;
+            }
+        }
+    }
+    
     .groupe-connaissance {
         display: flex;
         flex-direction: column;
@@ -92,6 +139,10 @@
         justify-content: center;
 
         margin-bottom: 50px;
+
+        @media screen and (min-width: $breakpoint-sm) {
+            width: 50%;
+        }
 
         h4 {
             margin: 10px 0;
