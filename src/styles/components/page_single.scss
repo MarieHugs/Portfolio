@@ -1,0 +1,49 @@
+.projet_single{
+    position: relative;
+    margin-bottom: 60px;
+    .content {
+        padding: 15px;
+
+        border-bottom: 1px solid var(--color-black);
+        border-left: 1px solid var(--color-black);
+    }
+
+    h2 {
+        margin-bottom: 0;
+        margin-top: 0;
+        color: var(--color-secondary);
+    }
+    img {
+        margin-top: -50px;
+        margin-bottom: -50px;
+    }
+    .titre-projet p {
+        text-align: center;
+        margin-top: 0;
+    }
+    .description-projet {
+        display: flex;
+        align-items: flex-start;
+
+        margin: 30px 0;
+        p {
+            margin: 0 10px 0 0;
+        }
+        svg {
+            margin-bottom: 10px;
+        }
+    }
+    .btn_article {
+        position: absolute;
+        bottom: -30px;
+    }
+}
+
+.explication{
+    h3{
+        color: var(--color-secondary);
+    }
+    .aspect-projet{
+        margin: 100px 0;
+    }
+}
