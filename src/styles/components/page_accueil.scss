@@ -7,15 +7,24 @@
     }
 
     img {
-        margin-top: -50px;
+        margin-top: -20%;
+        
+        @media screen and (min-width: $breakpoint-sm) {
+           max-width: 90%;
+        }
     }
     .img__mobile {
+        @media screen and (min-width: $breakpoint-sm) {
+            margin-top: -15%;
+            margin-left: 20%;
+
+         }
         @media screen and (min-width: $breakpoint-md) {
             display: none;
         }
     }
     .description__acceuil {
-        margin-top: -50px;
+        margin-top: -20%;
         text-align: left;
 
         p {
@@ -34,10 +43,10 @@
         }
     }
 
-    @media screen and (min-width: $breakpoint-md) {
-        display: flex;
-        flex-direction: column;
-    }
+        @media screen and (min-width: $breakpoint-md) {
+            display: flex;
+            flex-direction: column;
+        }
 }
 
 .hero__acceuil .wrapper {
@@ -49,6 +58,7 @@
             display: block;
         }
     }
+
     @media screen and (min-width: $breakpoint-md) {
         display: flex;
         justify-content: space-between;
@@ -63,8 +73,9 @@
         img {
             position: absolute;
             z-index: -1;
-            top: -50px;
-            right: -400px;
+            top: 5%;
+            right: -5%;
+            width: 70%;
         }
         .description__acceuil {
             margin-top: 100px;
@@ -72,7 +83,7 @@
 
         p {
             text-align: left;
-            width: 500px;
+            width: 350px;
         }
     }
 }
