@@ -28,7 +28,10 @@
 .qualites {
     position: relative;
 
-    margin-top: 50px;
+    margin-top: 10%;
+    @media screen and (min-width: $breakpoint-lg) {
+       margin-left: 15%;
+    }
     .wrapper {
         margin: 0;
     }
