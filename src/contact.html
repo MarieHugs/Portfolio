@@ -62,48 +62,54 @@
                             autocomplete="off"
                             data-component="Form"
                         >
-                            <fieldset>
-                                <div class="input">
-                                    <input
-                                        class="input__element"
-                                        type="text"
-                                        name="name"
-                                        id="name"
-                                        placeholder="Nom"
-                                        required
-                                    />
-                                </div>
+                            <div class="from__body">
+                                <fieldset>
+                                    <div class="input">
+                                        <input
+                                            class="input__element"
+                                            type="text"
+                                            name="name"
+                                            id="name"
+                                            placeholder="Nom"
+                                            required
+                                        />
+                                    </div>
 
-                                <div class="input">
-                                    <input
-                                        class="input__element"
-                                        type="email"
-                                        name="email"
-                                        id="email"
-                                        placeholder="Courriel"
-                                        required
-                                    />
-                                </div>
+                                    <div class="input">
+                                        <input
+                                            class="input__element"
+                                            type="email"
+                                            name="email"
+                                            id="email"
+                                            placeholder="Courriel"
+                                            required
+                                        />
+                                    </div>
 
-                                <div class="input">
-                                    <textarea
-                                        class="input__element"
-                                        name="message"
-                                        id="message"
-                                        placeholder="Message"
-                                        required
-                                    ></textarea>
-                                </div>
-                            </fieldset>
+                                    <div class="input">
+                                        <textarea
+                                            class="input__element"
+                                            name="message"
+                                            id="message"
+                                            placeholder="Message"
+                                            required
+                                        ></textarea>
+                                    </div>
+                                </fieldset>
 
-                            <footer class="form__footer">
-                                <a class="btn btn__large btn__form" href=""
-                                    >Soumettre
-                                    <svg class="icon icon--md icon--stroke">
-                                        <use xlink:href="#icon-arrow"></use>
-                                    </svg>
-                                </a>
-                            </footer>
+                                <footer class="form__footer">
+                                    <button class="btn btn__large btn__form">
+                                        Soumettre
+                                        <svg class="icon icon--md icon--stroke">
+                                            <use xlink:href="#icon-arrow"></use>
+                                        </svg>
+                                    </button>
+                                </footer>
+                            </div>
+                            <div class="form__confirmation">
+                                <h2>Merci</h2>
+                                <p>Votre message à bien été envoyer!</p>
+                            </div>
                         </form>
                     </div>
                 </div>

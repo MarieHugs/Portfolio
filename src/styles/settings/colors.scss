@@ -8,11 +8,14 @@
     --color-black: #444;
 
     // Couleurs du projet
-    --color-primary: #FACACC;
-    --color-primary-darker: #D08D8F;
+    --color-primary: #facacc;
+    --color-primary-darker: #d08d8f;
     --color-secondary: #709981;
-    --color-secondary-darker: #4C6A59;
+    --color-secondary-darker: #4c6a59;
+    --color-secondary-lighter: #bacfc3;
 
     --color-bg-primary: var(--color-white);
     --color-bg-secondary: var(--color-primary);
+
+    --color-form-fail: #f5494e;
 }
