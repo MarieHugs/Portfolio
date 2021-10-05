@@ -1,10 +1,9 @@
 .contact {
-    margin-bottom: 100px;
-    .contenu-contact{
-    @media screen and (min-width: $breakpoint-md) {
+    .contenu-contact {
+        @media screen and (min-width: $breakpoint-md) {
             display: flex;
             align-items: flex-start;
-        } 
+        }
     }
     h1 {
         text-align: center;
@@ -12,7 +11,7 @@
     .contactez-moi {
         padding: 40px;
 
-        @media screen and (min-width: $breakpoint-md){
+        @media screen and (min-width: $breakpoint-md) {
             width: 50%;
             height: 100%;
             padding-top: 0;
@@ -28,7 +27,7 @@
         h3 {
             text-align: center;
             font-size: 1.875em;
-            @media screen and (min-width: $breakpoint-md){
+            @media screen and (min-width: $breakpoint-md) {
                 margin-top: -20px;
             }
         }
@@ -40,16 +39,16 @@
         background-color: var(--color-black);
         color: var(--color-white);
         padding: 10px 15px;
-        @media screen and (min-width: $breakpoint-md){
-            margin-top: 20px
+        @media screen and (min-width: $breakpoint-md) {
+            margin-top: 20px;
         }
 
         svg {
             margin-left: 10px;
         }
     }
-    .formulaire{
-        @media screen and (min-width: $breakpoint-md){
+    .formulaire {
+        @media screen and (min-width: $breakpoint-md) {
             width: 50%;
         }
     }
