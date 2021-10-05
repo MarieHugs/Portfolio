@@ -122,11 +122,19 @@ header {
         list-style: none;
         padding: 0;
 
+        overflow: hidden;
+
         a {
             width: 100%;
             display: block;
             text-align: center;
             font-size: var(--font-size-h4);
+
+            margin-bottom: 20px;
+
+            @media screen and (min-width: $breakpoint-md) {
+                margin-left: 10px;
+            }
         }
     }
 
