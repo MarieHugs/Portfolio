@@ -1,5 +1,7 @@
 import Header from './components/Header';
 import Form from './components/Form';
+import Video from './components/Video';
+
 
 export default class ComponentFactory {
   constructor() {
@@ -7,6 +9,7 @@ export default class ComponentFactory {
     this.componentList = {
       Header,
       Form,
+      Video,
     };
     this.init();
   }
