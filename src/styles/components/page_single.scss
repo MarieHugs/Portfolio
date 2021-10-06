@@ -36,8 +36,8 @@
             width: 48%;
         }
         @media screen and (min-width: $breakpoint-sm) {
-            max-width: 80%;
             align-self: center;
+            margin-bottom: -10%;
         }
        
     }
@@ -48,13 +48,18 @@
     .description-projet {
         display: flex;
         align-items: flex-start;
+        justify-content: space-between;
 
         margin: 30px 0;
         p {
             margin: 0 10px 0 0;
+            width: 70%;
         }
         svg {
             margin-bottom: 10px;
+        }
+        .logiciel{
+            margin-right: 15%;
         }
     }
     .btn_article {

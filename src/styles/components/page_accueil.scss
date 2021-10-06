@@ -57,6 +57,7 @@
         @media screen and (min-width: $breakpoint-md) {
             display: block;
         }
+    
     }
 
     @media screen and (min-width: $breakpoint-md) {
@@ -73,7 +74,7 @@
         img {
             position: absolute;
             z-index: -1;
-            top: 5%;
+            top: -15%;
             right: -5%;
             width: 70%;
         }
