@@ -21,9 +21,9 @@
     @media screen and (min-width: $breakpoint-sm) {
         --font-size-h1: 4rem;
     }
-    @media screen and (min-width: $breakpoint-md) {
+    @media screen and (min-width: $breakpoint-lg) {
         /// Grosseur des textes
         --font-size-h1: 5rem;
-        --font-size-h3: 2.4rem;
+        --font-size-h3: 2rem;
     }
 }

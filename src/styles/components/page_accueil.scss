@@ -1,6 +1,11 @@
+.body_acceuil{
+    overflow: hidden;
+}
+
 .contenu__accueil {
     h3 {
         margin-left: 50px;
+        position: relative;
         @media screen and (min-width: $breakpoint-md) {
             margin-left: 50px;
         }
@@ -48,6 +53,7 @@
             flex-direction: column;
         }
 }
+
 
 .hero__acceuil .wrapper {
 
