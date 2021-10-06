@@ -31,6 +31,7 @@
     img {
         margin-top: -50px;
         margin-bottom: -50px;
+
         @media screen and (min-width: $breakpoint-md){
             order: 1; 
             width: 48%;
@@ -72,7 +73,58 @@
     h3{
         color: var(--color-secondary);
     }
+  
     .aspect-projet{
         margin: 100px 0;
+
+        img{
+            max-width: 70%;
+        }
+
+        .img2_timflix{
+            margin-top: 25px;
+        }
+        @media screen and (min-width: $breakpoint-md){
+            display: flex;
+            flex-direction: column;
+        }
     }
+    @media screen and (min-width: $breakpoint-md){
+       .desc_aspect {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        } 
+        p{
+                max-width: 50%;
+        }
+    }
+    
 }
+
+@media screen and (min-width: $breakpoint-md) {
+    .explication .aspect-projet:nth-child(odd){
+        text-align: left;
+        img{
+            align-self: flex-end;
+        }
+    }
+
+    .explication .aspect-projet:nth-child(even){
+        text-align: right;
+        .desc_aspect {
+            align-items: flex-end;
+        }
+        img{
+            align-self: flex-start;
+        }
+
+        .img2_timflix{
+            align-self: flex-end;
+            margin-top: 50px;
+        }
+    }
+    
+}
+
