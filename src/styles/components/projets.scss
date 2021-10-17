@@ -2,12 +2,11 @@
     text-align: center;
     @media screen and (min-width: $breakpoint-md) {
         text-align: left;
-       h1{
+        h1 {
             text-align: center;
             position: relative;
-        } 
+        }
     }
-    
 }
 
 .articles article:nth-child(odd) {
@@ -15,7 +14,7 @@
     flex-direction: column;
     @media screen and (min-width: $breakpoint-md) {
         flex-direction: row;
-     }
+    }
     .content {
         border-bottom: 1px solid var(--color-black);
         border-left: 1px solid var(--color-black);
@@ -23,55 +22,51 @@
             margin-right: -10%;
         }
     }
-    .description-projet{
+    .description-projet {
         text-align: left;
-        .logiciel{
+        .logiciel {
             margin-right: 15%;
         }
     }
 
-    .btn_article{
+    .btn_article {
         left: 30px;
         @media screen and (min-width: $breakpoint-md) {
             left: 10%;
         }
     }
 
-    img {
-        order: -1; 
+    .img_projets_relative {
+        order: -1;
         @media screen and (min-width: $breakpoint-md) {
-            order: 0; 
+            order: 0;
         }
-        
     }
 }
 
 .articles article:nth-child(even) {
-    
     .content {
         border-bottom: 1px solid var(--color-black);
         border-right: 1px solid var(--color-black);
         @media screen and (min-width: $breakpoint-md) {
             align-items: flex-end;
             margin-left: -10%;
-            .titre-projet{
-                text-align: right;  
-              }
+            .titre-projet {
+                text-align: right;
+            }
         }
-        
-        
     }
-    .description-projet{
+    .description-projet {
         text-align: right;
         @media screen and (min-width: $breakpoint-md) {
-           justify-content: flex-end;
+            justify-content: flex-end;
         }
-        .logiciel{
+        .logiciel {
             order: -1;
             margin-right: 10px;
         }
     }
-    .btn_article{
+    .btn_article {
         right: 30px;
         @media screen and (min-width: $breakpoint-md) {
             right: 10%;
@@ -81,13 +76,14 @@
 .articles article {
     position: relative;
     margin-bottom: 60px;
+    margin-top: 100px;
 
     @media screen and (min-width: $breakpoint-md) {
-       display: flex;
-       flex-direction: row;
-       justify-content: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
 
-       margin-bottom: 100px;
+        margin-bottom: 100px;
     }
 
     .content {
@@ -102,15 +98,15 @@
         margin-top: 0;
         color: var(--color-secondary);
     }
-    img {
-        margin-top: -50px;
-        margin-bottom: -50px;
+    .img_projets_relative {
+        margin-bottom: -25px;
+
         @media screen and (min-width: $breakpoint-sm) {
             max-width: 80%;
             align-self: center;
         }
         @media screen and (min-width: $breakpoint-md) {
-            width: 48%;
+            width: 60%;
         }
     }
     .titre-projet p {
@@ -125,27 +121,150 @@
         align-items: flex-start;
         justify-content: space-between;
 
-
         margin: 30px 0;
         p {
             margin: 0 10px 0 0;
             @media screen and (min-width: $breakpoint-md) {
-                width:70%;
+                width: 70%;
             }
         }
         svg {
             margin-bottom: 10px;
         }
     }
-    .logiciel{
+    .logiciel {
         @media screen and (min-width: $breakpoint-md) {
             display: flex;
-            flex-direction:column;
+            flex-direction: column;
         }
     }
     .btn_article {
         position: absolute;
         bottom: -30px;
-        
+    }
+}
+
+//blobs
+
+.img_projets_relative {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 250px;
+    width: 100%;
+
+    @media screen and (min-width: $breakpoint-sm) {
+        height: 400px;
+    }
+
+    .blob_ff_img {
+        max-width: 400px;
+        @media screen and (min-width: $breakpoint-sm) {
+            max-width: 600px;
+        }
+    }
+}
+
+.blob_projet_img {
+    position: absolute;
+    width: 100%;
+    height: 250px;
+
+    @media screen and (min-width: $breakpoint-sm) {
+        height: 400px;
+    }
+
+    @media screen and (min-width: $breakpoint-md) {
+        width: 100%;
+    }
+
+    @media screen and (min-width: $breakpoint-md) {
+        height: 500px;
+    }
+
+    &:after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 225px;
+        position: absolute;
+        top: 10px;
+        left: 5px;
+
+        @media screen and (min-width: $breakpoint-sm) {
+            height: 375px;
+            top: 10px;
+            left: 5px;
+            transform: rotate(-50deg);
+        }
+
+        @media screen and (min-width: $breakpoint-md) {
+            top: 25px;
+            left: 25px;
+            height: 450px;
+            width: 90%;
+        }
+    }
+}
+
+.blob_ff_img {
+    &:after {
+        background-color: #000;
+        background-image: url('../../assets/images/ff_single.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center top;
+    }
+}
+
+.blob_ff_img {
+    &:after {
+        background-color: #000;
+        background-image: url('../../assets/images/ff_single.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center top;
+    }
+}
+
+.blob_tf_img {
+    &:after {
+        background-color: #000;
+        background-image: url('../../assets/images/tf_single.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: left top;
+    }
+}
+
+.blob_owo_img {
+    &:after {
+        background-color: #000;
+        background-image: url('../../assets/images/owo_single.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right top;
+    }
+}
+
+.blob_cc_img {
+    &:after {
+        background-color: #000;
+        background-image: url('../../assets/images/cc_single.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: left top;
+    }
+}
+
+.blob_mem_img {
+    &:after {
+        background-color: #000;
+        background-image: url('../../assets/images/mem_single.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
     }
 }
