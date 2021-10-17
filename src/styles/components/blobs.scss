@@ -56,6 +56,13 @@ $time: 30s;
     @media screen and (min-width: $breakpoint-md) {
         display: none;
     }
+
+    .blob_accueil_img {
+        max-width: 400px;
+        @media screen and (min-width: $breakpoint-sm) {
+            max-width: 600px;
+        }
+    }
 }
 
 .img__desktop {
