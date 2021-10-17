@@ -1,8 +1,8 @@
-h1{
+h1 {
     text-align: center;
     position: relative;
 }
-.projet_single{
+.projet_single {
     position: relative;
     margin-bottom: 60px;
     margin-top: 50px;
@@ -11,10 +11,10 @@ h1{
         display: flex;
         flex-direction: row;
         justify-content: center;
- 
+
         margin-top: 100px;
         margin-bottom: 200px;
-     }
+    }
 
     .content {
         padding: 15px;
@@ -36,15 +36,14 @@ h1{
         margin-top: -50px;
         margin-bottom: -50px;
 
-        @media screen and (min-width: $breakpoint-md){
-            order: 1; 
+        @media screen and (min-width: $breakpoint-md) {
+            order: 1;
             width: 48%;
         }
         @media screen and (min-width: $breakpoint-sm) {
             align-self: center;
             margin-bottom: -10%;
         }
-       
     }
     .titre-projet p {
         text-align: center;
@@ -63,7 +62,7 @@ h1{
         svg {
             margin-bottom: 10px;
         }
-        .logiciel{
+        .logiciel {
             margin-right: 15%;
         }
     }
@@ -73,62 +72,85 @@ h1{
     }
 }
 
-.explication{
-    h3{
+.explication {
+    h3 {
         color: var(--color-secondary);
     }
-  
-    .aspect-projet{
+
+    .aspect-projet {
         margin: 100px 0;
 
-        img{
+        img {
             max-width: 70%;
         }
 
-        .img2_timflix{
+        .img2_timflix {
             margin-top: 25px;
         }
-        @media screen and (min-width: $breakpoint-md){
+        @media screen and (min-width: $breakpoint-md) {
             display: flex;
             flex-direction: column;
         }
     }
-    @media screen and (min-width: $breakpoint-md){
-       .desc_aspect {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-
-        } 
-        p{
-                max-width: 50%;
+    @media screen and (min-width: $breakpoint-md) {
+        .desc_aspect {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+        p {
+            max-width: 50%;
         }
     }
-    
 }
 
 @media screen and (min-width: $breakpoint-md) {
-    .explication .aspect-projet:nth-child(odd){
+    .explication .aspect-projet:nth-child(odd) {
         text-align: left;
-        img{
+        img {
             align-self: flex-end;
         }
     }
 
-    .explication .aspect-projet:nth-child(even){
+    .explication .aspect-projet:nth-child(even) {
         text-align: right;
         .desc_aspect {
             align-items: flex-end;
         }
-        img{
+        img {
             align-self: flex-start;
         }
 
-        .img2_timflix{
+        .img2_timflix {
             align-self: flex-end;
             margin-top: 50px;
         }
     }
-    
 }
 
+//blobs
+
+.img_projet_relative {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 250px;
+    width: 100%;
+    order: 1;
+
+    @media screen and (min-width: $breakpoint-sm) {
+        height: 400px;
+    }
+
+    margin-bottom: -25px;
+
+    @media screen and (min-width: $breakpoint-sm) {
+        max-width: 80%;
+        align-self: center;
+    }
+    @media screen and (min-width: $breakpoint-md) {
+        width: 60%;
+    }
+}

@@ -83,7 +83,7 @@
         flex-direction: row;
         justify-content: center;
 
-        margin-bottom: 100px;
+        margin-bottom: 150px;
     }
 
     .content {
@@ -158,13 +158,6 @@
     @media screen and (min-width: $breakpoint-sm) {
         height: 400px;
     }
-
-    .blob_ff_img {
-        max-width: 400px;
-        @media screen and (min-width: $breakpoint-sm) {
-            max-width: 600px;
-        }
-    }
 }
 
 .blob_projet_img {
@@ -206,16 +199,6 @@
             height: 450px;
             width: 90%;
         }
-    }
-}
-
-.blob_ff_img {
-    &:after {
-        background-color: #000;
-        background-image: url('../../assets/images/ff_single.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center top;
     }
 }
 
