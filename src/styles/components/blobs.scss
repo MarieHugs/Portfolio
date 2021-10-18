@@ -29,6 +29,9 @@ $time: 30s;
         margin-top: 0;
         margin-left: 45%;
     }
+    @media screen and (min-width: $breakpoint-xl){
+        margin-left: 48%;
+    }
 }
 
 .blob_acceuil {
@@ -43,7 +46,9 @@ $time: 30s;
         margin-top: -5%;
         margin-left: 20%;
     }
-   
+    @media screen and (min-width: $breakpoint-xl){
+        margin-top: -2%;
+    }
 }
 
 .img__mobile {

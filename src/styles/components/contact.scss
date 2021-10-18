@@ -22,6 +22,10 @@
             align-items: flex-start;
             justify-content: space-between;
         }
+
+        @media screen and (min-width: $breakpoint-xl){
+            margin-left: 15%;
+        }
     }
     .info {
         margin-top: 50px;
@@ -58,26 +62,29 @@
     top: 40%;
     left: 1%;
     width: 98%;
-    height: 700px;
+    height: 600px;
 
     @media screen and (min-width: $breakpoint-md) {
-        height: 450px;
-        top: 38%;
+        height: 425px;
+        top: 30%;
     }
     @media screen and (min-width: $breakpoint-lg) {
-        top: 35%;
+        top: 28%;
+        height: 500px;
+    }
+    @media screen and (min-width: $breakpoint-xl) {
+        top: 30%;
     }
 }
 .blob_contact2 {
     position: absolute;
-    bottom: -10%;
+    bottom: 10%;
     left: 50%;
     width: 35%;
     height: 15%;
     background-color: var(--color-white);
 
     @media screen and (min-width: $breakpoint-sm) {
-        bottom: -5%;
         left: 60%;
         width: 25%;
         height: 15%;
@@ -88,5 +95,9 @@
     }
     @media screen and (min-width: $breakpoint-lg) {
         bottom: 45%;
+    }
+    @media screen and (min-width: $breakpoint-xl) {
+        left: 75%;
+        width: 15%;
     }
 }

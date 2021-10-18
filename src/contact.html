@@ -64,6 +64,8 @@
                             class="form"
                             autocomplete="off"
                             data-component="Form"
+                            action="mail.php" 
+                            method="POST"
                         >
                             <div class="from__body">
                                 <fieldset>
@@ -91,17 +93,18 @@
 
                                     <div class="input">
                                         <textarea
-                                            class="input__element"
+                                            class="input__element"­
                                             name="message"
                                             id="message"
                                             placeholder="Message"
                                             required
-                                        ></textarea>
+                                        >
+                                        </textarea>
                                     </div>
                                 </fieldset>
 
                                 <footer class="form__footer">
-                                    <button class="btn btn__large btn__form">
+                                    <button class="btn btn__large btn__form" type="submit" value="Send">
                                         Soumettre
                                         <svg class="icon icon--md icon--stroke">
                                             <use xlink:href="#icon-arrow"></use>

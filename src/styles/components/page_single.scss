@@ -102,6 +102,10 @@ h1 {
             max-width: 50%;
         }
     }
+
+    @media screen and (min-width: $breakpoint-xl){
+        margin: 0 50px;
+    }
 }
 
 @media screen and (min-width: $breakpoint-md) {

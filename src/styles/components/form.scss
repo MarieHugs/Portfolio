@@ -5,6 +5,9 @@
     @media screen and (min-width: $breakpoint-md) {
         width: 50%;
     }
+    @media screen and (min-width: $breakpoint-xl){
+        margin-right: 10%;
+    }
 }
 
 .form {
