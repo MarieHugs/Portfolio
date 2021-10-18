@@ -94,6 +94,10 @@
         padding: 20px;
         margin-bottom: 100px;
 
+        @media screen and (min-width: $breakpoint-md){
+            height: 350px;
+        }
+    
         h2 {
             margin-top: 0;
         }
