@@ -9,8 +9,10 @@
     @media screen and (min-width: $breakpoint-sm) {
         padding: 0 15px;
     }
-    @media screen and (min-width: $breakpoint-sm) {
+
+    @media screen and (min-width: $breakpoint-xl) {
         padding: 0 40px;
+        max-width: $breakpoint-xl;
     }
 }
 
