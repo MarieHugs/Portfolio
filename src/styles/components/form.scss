@@ -5,6 +5,9 @@
     @media screen and (min-width: $breakpoint-md) {
         width: 50%;
     }
+    @media screen and (min-width: $breakpoint-xl){
+        margin-right: 10%;
+    }
 }
 
 .form {
@@ -91,6 +94,10 @@
         padding: 20px;
         margin-bottom: 100px;
 
+        @media screen and (min-width: $breakpoint-md){
+            height: 350px;
+        }
+    
         h2 {
             margin-top: 0;
         }

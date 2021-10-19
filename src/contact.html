@@ -41,8 +41,8 @@
                     <div class="contactez-moi">
                         <div class="info">
                             <h3>Contactez-moi</h3>
-                            <p># : 514-770-3270</p>
-                            <p>@ : melamontagne.dev@gmail.com</p>
+                            <p><a href="tel:5147703270"># : 514-770-3270</a></p>
+                            <p><a href="mailto:melamontagne.dev@gmail.com"  >@ : melamontagne.dev@gmail.com</a></p>
                         </div>
                         <a
                             class="btn btn__cv"
@@ -60,7 +60,7 @@
 
                     <div class="formulaire">
                         <form
-                            action=""
+                            action="mail.php"
                             class="form"
                             autocomplete="off"
                             data-component="Form"
@@ -89,19 +89,13 @@
                                         />
                                     </div>
 
-                                    <div class="input">
-                                        <textarea
-                                            class="input__element"
-                                            name="message"
-                                            id="message"
-                                            placeholder="Message"
-                                            required
-                                        ></textarea>
+                                    <div class="input">     
+                                       <textarea class="input__element" placeholder="Message" name="message" id="message" required></textarea>
                                     </div>
                                 </fieldset>
 
                                 <footer class="form__footer">
-                                    <button class="btn btn__large btn__form">
+                                    <button class="btn btn__large btn__form" type="submit" value="Send">
                                         Soumettre
                                         <svg class="icon icon--md icon--stroke">
                                             <use xlink:href="#icon-arrow"></use>
@@ -109,11 +103,12 @@
                                     </button>
                                 </footer>
                             </div>
-                            <div class="form__confirmation">
+                            <div class="form__confirmation" id="success_message">
                                 <h2>Merci</h2>
                                 <p>Votre message à bien été envoyer!</p>
                             </div>
                         </form>
+   
                     </div>
                 </div>
             </div>

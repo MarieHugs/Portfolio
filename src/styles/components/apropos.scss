@@ -1,3 +1,9 @@
+.wrapper{
+    @media screen and (min-width: $breakpoint-lg){
+        margin: 0 50px;
+    }
+}
+
 .intro_apropos {
     h1 {
         text-align: center;
@@ -9,6 +15,9 @@
     .titre_contact {
         h4 {
             margin-bottom: 0;
+            @media screen and (min-width: $breakpoint-xl){
+                font-size: var(--font-size-h4);
+            }
         }
         p {
             margin: 0;
@@ -19,6 +28,10 @@
         margin-top: 50px;
         width: 70%;
         margin-left: auto;
+
+        @media screen and (min-width: $breakpoint-lg){
+            text-align: right;
+        }
     }
 }
 
@@ -57,57 +70,85 @@
         margin-left: auto;
     }
 
-    .qualite1 {
-        width: 80%;
-        margin-left: auto;
-        
-        &.qualite h5{
-            @media screen and (min-width: $breakpoint-sm) {
-              margin-left: 10%;
-            }
 
-            @media screen and (min-width: $breakpoint-md) {
-                margin-left: 18%;
-            }
-            
+    .qualite.qualite2,
+    .qualite.qualite3{
+        width: 55%;
+        margin-left: 45%;
+        @media screen and (min-width: $breakpoint-lg){
+            margin-left: 35%;
         }
-    }
-    .qualite2,
-    .qualite3 {
-        width: 60%;
-        margin-left: auto;
-        &.qualite h5{
+        @media screen and (min-width: $breakpoint-xl){
+            margin-left: 25%;
+        }
+        h5{
+            @media screen and (min-width: $breakpoint-sm) {
+                margin-left: 0;
+            }
+  
             @media screen and (min-width: $breakpoint-md) {
                 margin-left: 8%;
             }
-        }
-    }
-    .qualite4 {
-        width: 70%;
-        margin-left: auto;
 
-        &.qualite h5{
-            @media screen and (min-width: $breakpoint-md) {
-                margin-left: 13%;
+            @media screen and (min-width: $breakpoint-lg) {
+                margin-left: 12%;
+            }
+              
+            @media screen and (min-width: $breakpoint-xl) {
+                margin-left: 20%;
             }
         }
     }
 
     .qualite {
+        width: 70%;
+        margin-left: 30%;
+
+        @media screen and (min-width: $breakpoint-lg){
+          margin-bottom:25px;  
+          margin-left: 20%;
+        }
+        
+        @media screen and (min-width: $breakpoint-xl){
+            margin-left: 10%;
+            margin-bottom:50px;  
+        }
+
         h5 {
             margin: 0;
             color: var(--color-secondary);
-            
+
+            @media screen and (min-width: $breakpoint-sm) {
+              margin-left: 10%;
+            }
+
+            @media screen and (min-width: $breakpoint-md) {
+                margin-left: 17%;
+            }
+
+            @media screen and (min-width: $breakpoint-md) {
+                margin-left: 20%;
+            }
+
+            @media screen and (min-width: $breakpoint-xl) {
+                margin-left: 27%;
+            }
         }
         svg {
             height: 50px;
-            width: 100%;
-            margin-top: -10px;
+            margin-top: -5px;
         }
         p {
             margin: 0 -10px 20px auto;
             width: 70%;
             font-size: 1rem;
+            @media screen and (min-width: $breakpoint-sm){
+                width: 55%;
+            }
+
+            @media screen and (min-width: $breakpoint-lg){
+               font-size: var(--font-size-content);
+            }
         }
     }
 }

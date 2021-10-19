@@ -29,6 +29,9 @@ $time: 30s;
         margin-top: 0;
         margin-left: 45%;
     }
+    @media screen and (min-width: $breakpoint-xl){
+        margin-left: 48%;
+    }
 }
 
 .blob_acceuil {
@@ -42,6 +45,9 @@ $time: 30s;
         height: 75px;
         margin-top: -5%;
         margin-left: 20%;
+    }
+    @media screen and (min-width: $breakpoint-xl){
+        margin-top: -2%;
     }
 }
 
@@ -75,8 +81,9 @@ $time: 30s;
         height: 500px;
         width: 50%;
     }
-    @media screen and (min-width: $breakpoint-lg) {
-        height: 1000px;
+    @media screen and (min-width: $breakpoint-xl) {
+        margin-top: 2%;
+        margin-right: 15%;
     }
 }
 
@@ -91,10 +98,12 @@ $time: 30s;
 
     @media screen and (min-width: $breakpoint-md) {
         width: 48%;
+        height: 500px;
     }
 
-    @media screen and (min-width: $breakpoint-md) {
-        height: 500px;
+    @media screen and (min-width: $breakpoint-xl) {
+        width: 60%;
+        height: 700px;
     }
 
     &:after {
@@ -117,6 +126,12 @@ $time: 30s;
             top: 25px;
             left: 25px;
             height: 450px;
+            width: 90%;
+        }
+
+        @media screen and (min-width: $breakpoint-xl){
+            left: 35px;
+            height: 650px;
             width: 90%;
         }
 

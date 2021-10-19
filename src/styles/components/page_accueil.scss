@@ -16,6 +16,9 @@
         @media screen and (min-width: $breakpoint-md) {
             margin-left: 50px;
         }
+        @media screen and (min-width: $breakpoint-xl){
+            font-size: 2.25rem;
+        }
     }
 
     .description__acceuil {
@@ -24,6 +27,16 @@
         p {
             text-align: end;
             font-weight: 600;
+
+            @media screen and (min-width: $breakpoint-md){
+                text-align: left;
+                width: 350px;  
+            }
+
+            @media screen and (min-width: $breakpoint-xl){
+                font-size: 1.4rem;
+                width: 55%;
+            }
         }
     }
     .btn__accueil {
@@ -33,6 +46,9 @@
 
         @media screen and (min-width: $breakpoint-md) {
             margin-top: 15%;
+        }
+        @media screen and (min-width: $breakpoint-xl){
+            margin-top: 30%;
         }
     }
 
@@ -68,9 +84,5 @@
             margin-top: 100px;
         }
 
-        p {
-            text-align: left;
-            width: 350px;
-        }
     }
 }

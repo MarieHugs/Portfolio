@@ -35,6 +35,7 @@ h1 {
     img {
         margin-top: -50px;
         margin-bottom: -50px;
+        
 
         @media screen and (min-width: $breakpoint-md) {
             order: 1;
@@ -103,7 +104,14 @@ h1 {
             max-width: 50%;
         }
     }
+
+    @media screen and (min-width: $breakpoint-xl){
+        margin: 0 50px;
+    }
 }
+
+
+
 
 @media screen and (min-width: $breakpoint-md) {
     .explication .aspect-projet:nth-child(odd) {
