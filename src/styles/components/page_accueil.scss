@@ -16,7 +16,7 @@
         @media screen and (min-width: $breakpoint-md) {
             margin-left: 50px;
         }
-        @media screen and (min-width: $breakpoint-xl){
+        @media screen and (min-width: $breakpoint-xl) {
             font-size: 2.25rem;
         }
     }
@@ -28,12 +28,12 @@
             text-align: end;
             font-weight: 600;
 
-            @media screen and (min-width: $breakpoint-md){
+            @media screen and (min-width: $breakpoint-md) {
                 text-align: left;
-                width: 350px;  
+                width: 350px;
             }
 
-            @media screen and (min-width: $breakpoint-xl){
+            @media screen and (min-width: $breakpoint-xl) {
                 font-size: 1.4rem;
                 width: 55%;
             }
@@ -47,8 +47,8 @@
         @media screen and (min-width: $breakpoint-md) {
             margin-top: 15%;
         }
-        @media screen and (min-width: $breakpoint-xl){
-            margin-top: 30%;
+        @media screen and (min-width: $breakpoint-xl) {
+            margin-top: 20%;
         }
     }
 
@@ -83,6 +83,5 @@
         .description__acceuil {
             margin-top: 100px;
         }
-
     }
 }

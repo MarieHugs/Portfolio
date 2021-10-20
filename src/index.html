@@ -10,61 +10,63 @@
         <script src="scripts/main.js" defer></script>
     </head>
     <body class="body_acceuil">
-        <header
-            class="header"
-            data-component="Header"
-            data-autohide="Hide"
-            data-pourcentage="0.05"
-        >
-            <div class="wrapper">
-                <a href="index.html" class="header__brand"> MEL </a>
-                <nav class="nav-primary">
-                    <ul>
-                        <li><a href="index.html">Accueil</a></li>
-                        <li><a href="projets.html">Projets</a></li>
-                        <li><a href="apropos.html">À propos</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-                <button class="header__toggle js-toggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
-        </header>
+        <div class="site-container accueil">
+            <header
+                class="header"
+                data-component="Header"
+                data-autohide="Hide"
+                data-pourcentage="0.05"
+            >
+                <div class="wrapper">
+                    <a href="index.html" class="header__brand"> MEL </a>
+                    <nav class="nav-primary">
+                        <ul>
+                            <li><a href="index.html">Accueil</a></li>
+                            <li><a href="projets.html">Projets</a></li>
+                            <li><a href="apropos.html">À propos</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <button class="header__toggle js-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </header>
 
-        <div class="hero__acceuil">
-            <div class="wrapper">
-                <div class="contenu__accueil">
-                    <div>
-                        <h1>Marie-Eve Lamontagne</h1>
-                        <h3>
-                            <span class="blob blob_acceuil"></span>Aspirante
-                            Développeuse Web
-                        </h3>
+            <div class="hero__acceuil">
+                <div class="wrapper">
+                    <div class="contenu__accueil">
+                        <div>
+                            <h1>Marie-Eve Lamontagne</h1>
+                            <h3>
+                                <span class="blob blob_acceuil"></span>Aspirante
+                                Développeuse Web
+                            </h3>
+                        </div>
+                        <div class="img_accueil_relative img__mobile">
+                            <span class="blob blob_accueil_img"></span>
+                        </div>
+
+                        <div class="description__acceuil">
+                            <p>
+                                Mes compétences en développement front-end
+                                s’améliorent chaque jour!
+                            </p>
+                            <a
+                                href="projets.html"
+                                class="btn btn__large btn__accueil"
+                                >Mes Projets
+                                <svg class="icon icon--md icon--stroke">
+                                    <use xlink:href="#icon-arrow"></use>
+                                </svg>
+                            </a>
+                        </div>
                     </div>
-                    <div class="img_accueil_relative img__mobile">
+                    <div class="img_accueil_relative img__desktop">
                         <span class="blob blob_accueil_img"></span>
                     </div>
-
-                    <div class="description__acceuil">
-                        <p>
-                            Mes compétences en développement front-end
-                            s’améliorent chaque jour!
-                        </p>
-                        <a
-                            href="projets.html"
-                            class="btn btn__large btn__accueil"
-                            >Mes Projets
-                            <svg class="icon icon--md icon--stroke">
-                                <use xlink:href="#icon-arrow"></use>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-                <div class="img_accueil_relative img__desktop">
-                    <span class="blob blob_accueil_img"></span>
                 </div>
             </div>
         </div>

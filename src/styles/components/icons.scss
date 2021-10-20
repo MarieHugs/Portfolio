@@ -38,8 +38,12 @@
 }
 
 .icon--xl {
-    height: 4em;
-    width: 4em;
+    height: 2em;
+    width: 2em;
+    @media screen and (min-width: $breakpoint-lg) {
+        height: 2.75em;
+        width: 2.75em;
+    }
 }
 
 .icon--ligne {

@@ -10,118 +10,121 @@
         <script src="scripts/main.js" defer></script>
     </head>
     <body>
-        <header
-            class="header"
-            data-component="Header"
-            data-autohide="Hide"
-            data-pourcentage="0.05"
-        >
-            <div class="wrapper">
-                <a href="index.html" class="header__brand"> MEL </a>
-                <nav class="nav-primary">
-                    <ul>
-                        <li><a href="index.html">Accueil</a></li>
-                        <li><a href="projets.html">Projets</a></li>
-                        <li><a href="apropos.html">À propos</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-                <button class="header__toggle js-toggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
-        </header>
+        <div class="site-container single_tf">
 
-        <div class="wrapper">
-            <h1><span class="blob blob_titre"></span>Timflix</h1>
-            <article class="projet_single">
-                <div class="img_projet_relative">
-                    <span
-                        class="blob blob_projet_img blob_tf_img"
-                    ></span>
+            <header
+                class="header"
+                data-component="Header"
+                data-autohide="Hide"
+                data-pourcentage="0.05"
+            >
+                <div class="wrapper">
+                    <a href="index.html" class="header__brand"> MEL </a>
+                    <nav class="nav-primary">
+                        <ul>
+                            <li><a href="index.html">Accueil</a></li>
+                            <li><a href="projets.html">Projets</a></li>
+                            <li><a href="apropos.html">À propos</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <button class="header__toggle js-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
                 </div>
-                    <div class="content">
-                            <div class="titre-projet">
-                                <h3>Développement d’un site responsive avec l’utilisation d’une base de données</h3>
-                                <p>Projet Scolaire</p>
-                            </div>
-                            <div class="description-projet">
-                                <p>
-                                    J’ai effectué l’intégration et la
-                                    programmation du site web avec l’utilisation
-                                    d’une base de donnés externes.
-                                </p>
-                                <div class="logiciel">
-                                    <svg class="icon icon--lg icon--stroke">
-                                        <use xlink:href="#icon-vs_code"></use>
-                                    </svg>
+            </header>
+
+            <div class="wrapper">
+                <h1><span class="blob blob_titre"></span>Timflix</h1>
+                <article class="projet_single">
+                    <div class="img_projet_relative">
+                        <span
+                            class="blob blob_projet_img blob_tf_img"
+                        ></span>
+                    </div>
+                        <div class="content">
+                                <div class="titre-projet">
+                                    <h3>Développement d’un site responsive avec l’utilisation d’une base de données</h3>
+                                    <p>Projet Scolaire</p>
                                 </div>
-                            </div>
-                            <a class="btn btn__large btn_article" href="http://mlamontagne.dectim.ca/portfolio/TIMflix/" target="_blank">
-                                Voir le Site  
-                            <svg class="icon icon--sm icon--stroke">
-                                <use xlink:href="#icon-arrow"></use>
-                            </svg>
-                        </a>
+                                <div class="description-projet">
+                                    <p>
+                                        J’ai effectué l’intégration et la
+                                        programmation du site web avec l’utilisation
+                                        d’une base de donnés externes.
+                                    </p>
+                                    <div class="logiciel">
+                                        <svg class="icon icon--xl icon--stroke">
+                                            <use xlink:href="#icon-vs_code"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <a class="btn btn__large btn_article" href="http://mlamontagne.dectim.ca/portfolio/TIMflix/" target="_blank">
+                                    Voir le Site  
+                                <svg class="icon icon--sm icon--stroke">
+                                    <use xlink:href="#icon-arrow"></use>
+                                </svg>
+                            </a>
+                        </div>
+                </article>
+            </div>
+
+            <section class="explication projet_timflix">
+                <div class="wrapper">
+                    <span class="blob blob_single1"></span>
+                    <span class="blob blob_single2"></span>
+                    <span class="blob blob_single3"></span>
+                    <span class="blob blob_single4"></span>
+                    <span class="blob blob_single5"></span>
+                    <span class="blob blob_single6"></span>
+                    <div class="aspect-projet">
+                        <div class="desc_aspect">
+                            <h3>Caroussel</h3>
+                            <p>
+                                J’ai intégrer multiples caroussel avec <strong class="accent-texte"></strong>l’utilisation de Swiper</strong> dans la page web.
+                            </p>
+                        </div>
+                        <img src="assets/images/timflix/timflix_caroussel.png" alt="" />
                     </div>
-            </article>
+    
+                    <div class="aspect-projet">
+                        <div class="desc_aspect">
+                            <h3>Base de données</h3>
+                            <p>
+                                J’ai été piger dans <strong class="accent-texte">la base de données IMDB</strong> pour obtenir
+                                l’information sur les différents films dans le site.
+                            </p>
+                        </div>
+                        <img src="assets/images/timflix/timflix_base_de_donne1.png" alt="" />
+                        <img class="img2_timflix" src="assets/images/timflix/timflix_base_donne.png" alt="" />
+                    </div>
+                </div>
+            </section>
+
+        
+            <footer>
+                <div class="wrapper">
+                    <div class="medias">
+                        <svg class="icon icon--lg icon--stroke">
+                            <use xlink:href="#icon-facebook_logo"></use>
+                        </svg>
+                        <svg class="icon icon--lg icon--stroke icon_linked">
+                            <use xlink:href="#icon-linkedin_logo"></use>
+                        </svg>
+                        <svg class="icon icon--lg icon--stroke">
+                            <use xlink:href="#icon-git_logo"></use>
+                        </svg>
+                    </div>
+
+                    <hr />
+
+                    <p class="copyright">
+                        © 2021 - Marie-Eve Lamontagne - Développeuse web
+                    </p>
+                </div>
+            </footer>
         </div>
-
-        <section class="explication projet_timflix">
-            <div class="wrapper">
-                <span class="blob blob_single1"></span>
-                <span class="blob blob_single2"></span>
-                <span class="blob blob_single3"></span>
-                <span class="blob blob_single4"></span>
-                <span class="blob blob_single5"></span>
-                <span class="blob blob_single6"></span>
-                <div class="aspect-projet">
-                    <div class="desc_aspect">
-                        <h3>Caroussel</h3>
-                        <p>
-                            J’ai intégrer multiples caroussel avec <strong class="accent-texte"></strong>l’utilisation de Swiper</strong> dans la page web.
-                        </p>
-                    </div>
-                    <img src="assets/images/timflix/timflix_caroussel.png" alt="" />
-                </div>
- 
-                <div class="aspect-projet">
-                    <div class="desc_aspect">
-                        <h3>Base de données</h3>
-                        <p>
-                            J’ai été piger dans <strong class="accent-texte">la base de données IMDB</strong> pour obtenir
-                             l’information sur les différents films dans le site.
-                        </p>
-                    </div>
-                    <img src="assets/images/timflix/timflix_base_de_donne1.png" alt="" />
-                    <img class="img2_timflix" src="assets/images/timflix/timflix_base_donne.png" alt="" />
-                </div>
-            </div>
-        </section>
-
-       
-        <footer>
-            <div class="wrapper">
-                <div class="medias">
-                    <svg class="icon icon--lg icon--stroke">
-                        <use xlink:href="#icon-facebook_logo"></use>
-                    </svg>
-                    <svg class="icon icon--lg icon--stroke icon_linked">
-                        <use xlink:href="#icon-linkedin_logo"></use>
-                    </svg>
-                    <svg class="icon icon--lg icon--stroke">
-                        <use xlink:href="#icon-git_logo"></use>
-                    </svg>
-                </div>
-
-                <hr />
-
-                <p class="copyright">
-                    © 2021 - Marie-Eve Lamontagne - Développeuse web
-                </p>
-            </div>
-        </footer>
     </body>
 </html>

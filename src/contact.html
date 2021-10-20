@@ -9,131 +9,159 @@
         <script src="scripts/main.js" defer></script>
     </head>
     <body>
-        <header
-            class="header"
-            data-component="Header"
-            data-autohide="Hide"
-            data-pourcentage="0.05"
-        >
-            <div class="wrapper">
-                <a href="index.html" class="header__brand"> MEL </a>
-                <nav class="nav-primary">
-                    <ul>
-                        <li><a href="index.html">Accueil</a></li>
-                        <li><a href="projets.html">Projets</a></li>
-                        <li><a href="apropos.html">À propos</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-                <button class="header__toggle js-toggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
-        </header>
+        <div class="site-container contact">
+            <header
+                class="header"
+                data-component="Header"
+                data-autohide="Hide"
+                data-pourcentage="0.05"
+            >
+                <div class="wrapper">
+                    <a href="index.html" class="header__brand"> MEL </a>
+                    <nav class="nav-primary">
+                        <ul>
+                            <li><a href="index.html">Accueil</a></li>
+                            <li><a href="projets.html">Projets</a></li>
+                            <li><a href="apropos.html">À propos</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <button class="header__toggle js-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </header>
 
-        <section class="contact">
-            <div class="wrapper">
-                <h1><span class="blob blob_titre"></span>Contact</h1>
+            <section class="contact">
+                <div class="wrapper">
+                    <h1><span class="blob blob_titre"></span>Contact</h1>
 
-                <div class="contenu-contact">
-                    <div class="contactez-moi">
-                        <div class="info">
-                            <h3>Contactez-moi</h3>
-                            <p><a href="tel:5147703270"># : 514-770-3270</a></p>
-                            <p><a href="mailto:melamontagne.dev@gmail.com"  >@ : melamontagne.dev@gmail.com</a></p>
+                    <div class="contenu-contact">
+                        <div class="contactez-moi">
+                            <div class="info">
+                                <h3>Contactez-moi</h3>
+                                <p>
+                                    <a href="tel:5147703270"
+                                        ># : 514-770-3270</a
+                                    >
+                                </p>
+                                <p>
+                                    <a href="mailto:melamontagne.dev@gmail.com"
+                                        >@ : melamontagne.dev@gmail.com</a
+                                    >
+                                </p>
+                            </div>
+                            <a
+                                class="btn btn__cv"
+                                href="assets/Lamontagne_Marie-Eve_CV.pdf"
+                                download
+                                >Télécharger mon CV
+                                <svg class="icon icon--sm icon--stroke">
+                                    <use xlink:href="#icon-arrow_down"></use>
+                                </svg>
+                            </a>
                         </div>
-                        <a
-                            class="btn btn__cv"
-                            href="assets/Lamontagne_Marie-Eve_CV.pdf"
-                            download
-                            >Télécharger mon CV
-                            <svg class="icon icon--sm icon--stroke">
-                                <use xlink:href="#icon-arrow_down"></use>
-                            </svg>
-                        </a>
-                    </div>
 
-                    <span class="blob blob_contact"></span>
-                    <span class="blob blob_contact2"></span>
+                        <span class="blob blob_contact"></span>
+                        <span class="blob blob_contact2"></span>
 
-                    <div class="formulaire">
-                        <form
-                            action="mail.php"
-                            class="form"
-                            autocomplete="off"
-                            data-component="Form"
-                        >
-                            <div class="from__body">
-                                <fieldset>
-                                    <div class="input">
-                                        <input
-                                            class="input__element"
-                                            type="text"
-                                            name="name"
-                                            id="name"
-                                            placeholder="Nom"
-                                            required
-                                        />
-                                    </div>
+                        <div class="formulaire">
+                            <form
+                                action="mail.php"
+                                class="form"
+                                autocomplete="off"
+                                data-component="Form"
+                            >
+                                <div class="from__body">
+                                    <fieldset>
+                                        <div class="input">
+                                            <input
+                                                class="input__element"
+                                                type="text"
+                                                name="name"
+                                                id="name"
+                                                placeholder="Nom"
+                                                required
+                                            />
+                                        </div>
 
-                                    <div class="input">
-                                        <input
-                                            class="input__element"
-                                            type="email"
-                                            name="email"
-                                            id="email"
-                                            placeholder="Courriel"
-                                            required
-                                        />
-                                    </div>
+                                        <div class="input">
+                                            <input
+                                                class="input__element"
+                                                type="email"
+                                                name="email"
+                                                id="email"
+                                                placeholder="Courriel"
+                                                required
+                                            />
+                                        </div>
 
-                                    <div class="input">     
-                                       <textarea class="input__element" placeholder="Message" name="message" id="message" required></textarea>
-                                    </div>
-                                </fieldset>
+                                        <div class="input">
+                                            <textarea
+                                                class="input__element"
+                                                placeholder="Message"
+                                                name="message"
+                                                id="message"
+                                                required
+                                            ></textarea>
+                                        </div>
+                                    </fieldset>
 
-                                <footer class="form__footer">
-                                    <button class="btn btn__large btn__form" type="submit" value="Send">
-                                        Soumettre
-                                        <svg class="icon icon--md icon--stroke">
-                                            <use xlink:href="#icon-arrow"></use>
-                                        </svg>
-                                    </button>
-                                </footer>
-                            </div>
-                            <div class="form__confirmation" id="success_message">
-                                <h2>Merci</h2>
-                                <p>Votre message à bien été envoyer!</p>
-                            </div>
-                        </form>
-   
+                                    <footer class="form__footer">
+                                        <button
+                                            class="btn btn__large btn__form"
+                                            type="submit"
+                                            value="Send"
+                                        >
+                                            Soumettre
+                                            <svg
+                                                class="
+                                                    icon icon--md icon--stroke
+                                                "
+                                            >
+                                                <use
+                                                    xlink:href="#icon-arrow"
+                                                ></use>
+                                            </svg>
+                                        </button>
+                                    </footer>
+                                </div>
+                                <div
+                                    class="form__confirmation"
+                                    id="success_message"
+                                >
+                                    <h2>Merci</h2>
+                                    <p>Votre message à bien été envoyer!</p>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <footer>
-            <div class="wrapper">
-                <div class="medias">
-                    <svg class="icon icon--lg icon--stroke">
-                        <use xlink:href="#icon-facebook_logo"></use>
-                    </svg>
-                    <svg class="icon icon--lg icon--stroke icon_linked">
-                        <use xlink:href="#icon-linkedin_logo"></use>
-                    </svg>
-                    <svg class="icon icon--lg icon--stroke">
-                        <use xlink:href="#icon-git_logo"></use>
-                    </svg>
+            <footer>
+                <div class="wrapper">
+                    <div class="medias">
+                        <svg class="icon icon--lg icon--stroke">
+                            <use xlink:href="#icon-facebook_logo"></use>
+                        </svg>
+                        <svg class="icon icon--lg icon--stroke icon_linked">
+                            <use xlink:href="#icon-linkedin_logo"></use>
+                        </svg>
+                        <svg class="icon icon--lg icon--stroke">
+                            <use xlink:href="#icon-git_logo"></use>
+                        </svg>
+                    </div>
+
+                    <hr />
+
+                    <p class="copyright">
+                        © 2021 - Marie-Eve Lamontagne - Développeuse web
+                    </p>
                 </div>
-
-                <hr />
-
-                <p class="copyright">
-                    © 2021 - Marie-Eve Lamontagne - Développeuse web
-                </p>
-            </div>
-        </footer>
+            </footer>
+        </div>
     </body>
 </html>
