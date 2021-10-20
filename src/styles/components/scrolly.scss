@@ -1,15 +1,15 @@
 .has-js {
-    [data-scrolly='fromleft'] {
+    [data-scrolly="fromLeft"] {
         opacity: 0;
-        transition: all 1s $ease-in-cubic;
-        transform: translateX(-100%);
+        transition: all 1 sease-in;
+        transform: translateX(-110%);
         &.is-active {
             opacity: 1;
             transform: translateX(0);
         }
     }
 
-    [data-scrolly='fromRight'] {
+    [data-scrolly="fromRight"] {
         opacity: 0;
         transition: all 1s ease-out;
         transform: translateX(100%);
@@ -20,9 +20,9 @@
         }
     }
 
-    [data-scrolly='fromTop'] {
+    [data-scrolly="fromTop"] {
         opacity: 0;
-        transition: all 1s $ease-in-cubic;
+        transition: all 1s ease-in;
         transform: translateY(-100%);
 
         &.is-active {
@@ -30,9 +30,9 @@
             transform: translateY(0);
         }
     }
-    [data-scrolly='fromBottom'] {
+    [data-scrolly="fromBottom"] {
         opacity: 0;
-        transition: all 1s $ease-in-cubic;
+        transition: all 1s ease-in;
         transform: translateY(100%);
 
         &.is-active {
@@ -40,9 +40,9 @@
             transform: translateY(0);
         }
     }
-    [data-scrolly='fromOpacity'] {
+    [data-scrolly="fromOpacity"] {
         opacity: 0;
-        transition: all 0.5s $ease-in-circ;
+        transition: all 0.5s ease-in;
 
         &.is-active {
             opacity: 1;

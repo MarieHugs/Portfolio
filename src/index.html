@@ -10,12 +10,13 @@
         <script src="scripts/main.js" defer></script>
     </head>
     <body class="body_acceuil">
-        <div class="site-container accueil">
+        <div class="site-container accueil" data-component="Scrolly">
             <header
                 class="header"
                 data-component="Header"
                 data-autohide="Hide"
                 data-pourcentage="0.05"
+                data-scrolly="fromOpacity"
             >
                 <div class="wrapper">
                     <a href="index.html" class="header__brand"> MEL </a>
@@ -38,23 +39,24 @@
             <div class="hero__acceuil">
                 <div class="wrapper">
                     <div class="contenu__accueil">
-                        <div>
+                        <div data-scrolly="fromLeft">
                             <h1>Marie-Eve Lamontagne</h1>
                             <h3>
                                 <span class="blob blob_acceuil"></span>Aspirante
                                 Développeuse Web
                             </h3>
                         </div>
-                        <div class="img_accueil_relative img__mobile">
+                        <div data-scrolly="fromOpacity" class="img_accueil_relative img__mobile">
                             <span class="blob blob_accueil_img"></span>
                         </div>
 
                         <div class="description__acceuil">
-                            <p>
+                            <p data-scrolly="fromLeft">
                                 Mes compétences en développement front-end
                                 s’améliorent chaque jour!
                             </p>
                             <a
+                                data-scrolly="fromBottom"
                                 href="projets.html"
                                 class="btn btn__large btn__accueil"
                                 >Mes Projets
@@ -64,7 +66,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="img_accueil_relative img__desktop">
+                    <div data-scrolly="fromOpacity" class="img_accueil_relative img__desktop">
                         <span class="blob blob_accueil_img"></span>
                     </div>
                 </div>
