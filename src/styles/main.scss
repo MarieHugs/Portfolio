@@ -1,5 +1,6 @@
 // TOOLS
 // mixins et fonctions utilisés globalement dans le SCSS (Sass)
+@import 'tools/cover.scss';
 
 // SETTINGS
 // Contient les variables sur les polices, les définitions de couleurs, les définitions de  grandeurs,   etc.
@@ -35,7 +36,7 @@
 @import 'components/page_single.scss';
 @import 'components/form.scss';
 @import 'components/test.scss';
-
+@import 'components/video.scss';
 
 // UTILITIES
 // Utilitaires et classes auxiliaires avec possibilité de remplacer tout ce qui précède, par exemple masquer les éléments de la page

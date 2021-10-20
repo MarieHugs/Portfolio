@@ -35,7 +35,6 @@ h1 {
     img {
         margin-top: -50px;
         margin-bottom: -50px;
-        
 
         @media screen and (min-width: $breakpoint-md) {
             order: 1;
@@ -86,6 +85,13 @@ h1 {
             max-width: 70%;
         }
 
+        .video {
+            max-width: 70%;
+            img {
+                max-width: 100%;
+            }
+        }
+
         .img2_timflix {
             margin-top: 25px;
         }
@@ -105,16 +111,10 @@ h1 {
         }
     }
 
-    @media screen and (min-width: $breakpoint-xl){
+    @media screen and (min-width: $breakpoint-xl) {
         margin: 0 50px;
     }
 }
-
-
-.single_cc{
-    
-}
-
 
 @media screen and (min-width: $breakpoint-md) {
     .explication .aspect-projet:nth-child(odd) {
