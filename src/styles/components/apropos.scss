@@ -211,10 +211,13 @@
 .apropos {
     position: relative;
     .blob_single1 {
-        height: 20%;
+        height: 10%;
         width: 50%;
         top: 15%;
         right: -20px;
+        @media screen and (min-width: $breakpoint-sm) {
+            height: 20%;
+        }
     }
     .blob_single2,
     .blob_single3 {
@@ -222,10 +225,30 @@
     }
 
     .blob_single4 {
-        height: 10%;
+        top: 55%;
+        right: 75%;
+        height: 5%;
+        @media screen and (min-width: $breakpoint-sm) {
+            height: 10%;
+        }
     }
+    .blob_single5 {
+        height: 2%;
+        top: 27%;
+        @media screen and (min-width: $breakpoint-sm) {
+            top: 35%;
+            height: 5%;
+        }
+    }
+
     .blob_single6 {
-        top: 80%;
-        height: 30%;
+        top: 65%;
+        height: 20%;
+        width: 80%;
+        @media screen and (min-width: $breakpoint-sm) {
+            top: 60%;
+            height: 30%;
+            width: 70%;
+        }
     }
 }
