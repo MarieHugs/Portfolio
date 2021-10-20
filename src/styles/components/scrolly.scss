@@ -1,0 +1,51 @@
+.has-js {
+    [data-scrolly='fromleft'] {
+        opacity: 0;
+        transition: all 1s $ease-in-cubic;
+        transform: translateX(-100%);
+        &.is-active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    [data-scrolly='fromRight'] {
+        opacity: 0;
+        transition: all 1s ease-out;
+        transform: translateX(100%);
+
+        &.is-active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    [data-scrolly='fromTop'] {
+        opacity: 0;
+        transition: all 1s $ease-in-cubic;
+        transform: translateY(-100%);
+
+        &.is-active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    [data-scrolly='fromBottom'] {
+        opacity: 0;
+        transition: all 1s $ease-in-cubic;
+        transform: translateY(100%);
+
+        &.is-active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    [data-scrolly='fromOpacity'] {
+        opacity: 0;
+        transition: all 0.5s $ease-in-circ;
+
+        &.is-active {
+            opacity: 1;
+        }
+    }
+}
