@@ -207,6 +207,30 @@
     }
 }
 
+.video_presentation{
+    margin-top: 10%;
+    margin-bottom:100px;
+
+    h4 {
+        margin: 20px 0;
+        color: var(--color-secondary);
+        text-align: right;
+    }
+
+    .video{
+        max-width: 70%;
+        
+        .video_media{
+          background: linear-gradient(rgba(0, 0, 0, 0.8));  
+        }
+        img {
+            
+            max-width: 100%;
+        }
+    }
+    
+}
+
 //blobs
 .apropos {
     position: relative;
