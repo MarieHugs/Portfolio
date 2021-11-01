@@ -12,7 +12,7 @@
         $body = "Nom: $name\nEmail: $email\nMessage: $message";
         $sender = "De: $email"
         if(mail($receiver, $subject, $body, $sender)){
-            echo "Votre message à été envoyer!";
+            echo "Votre message à été envoyer!"
         }
     }
 
