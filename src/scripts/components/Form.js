@@ -34,6 +34,22 @@ export default class From {
       console.log('success');
 
       this.showConfirmation();
+
+      let xhr = new XMLHttpRequest();
+      xhr.open('POST', 'mail.php', true);
+      xhr.onload = () => {
+        if (xhr.readyState == 4 && xhr.status == 200) {
+          let response = xhr.response;
+          if (response.indexOf('Votre message à été envoyer!')) {
+            this.element.reset();
+            setTimeout(3000);
+          }
+          console.log('response');
+        }
+      };
+
+      let formData = new FormData(this.element);
+      xhr.send(formData);
     } else {
       console.log('fail');
     }
