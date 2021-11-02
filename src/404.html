@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>À propos - Marie-Eve Lamontagne - Développeuse Web</title>
+
+        <link
+            rel="shortcut icon"
+            type="image/png"
+            href="assets/images/favicon.png"
+        />
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-E3RNLLS0G7"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+
+            gtag("config", "G-E3RNLLS0G7");
+        </script>
+
+        <link rel="stylesheet" href="styles/main.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <script src="scripts/main.js" defer></script>
+    </head>
+    <body>
+        <div class="site-container erreur" data-component="Scrolly">
+            <header
+                class="header"
+                data-component="Header"
+                data-autohide="Hide"
+                data-pourcentage="0.05"
+            >
+                <div class="wrapper">
+                    <a href="index.html" class="header__brand"> MEL </a>
+                    <nav class="nav-primary">
+                        <ul>
+                            <li><a href="index.html">Accueil</a></li>
+                            <li><a href="projets.html">Projets</a></li>
+                            <li><a href="apropos.html">À propos</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <button class="header__toggle js-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </header>
+            <span
+                data-scrolly="fromOpacity"
+                class="blob blob_404 blob_single1"
+            ></span>
+            <span
+                data-scrolly="fromOpacity"
+                class="blob blob_404 blob_single2"
+            ></span>
+            <span
+                data-scrolly="fromOpacity"
+                class="blob blob_404 blob_single3"
+            ></span>
+            <div class="text_404">
+                <div class="wrapper">
+                    <div class="content_404">
+                        <h1 data-scrolly="fromScale">Erreur 404!!</h1>
+                        <h3 data-scrolly="fromScaleY">
+                            Désoler! Cette page n'existe pas..
+                        </h3>
+                    </div>
+                    <a
+                        data-scrolly="fromRight"
+                        href="index.html"
+                        class="btn btn__large"
+                    >
+                        <svg class="icon icon--md icon--stroke">
+                            <use xlink:href="#icon-arrow"></use>
+                        </svg>
+                        Retour à la page d'accueil
+                    </a>
+                </div>
+            </div>
+
+            <footer>
+                <div class="wrapper">
+                    <div class="medias">
+                        <a
+                            data-scrolly="fromBottomQuick"
+                            href="https://www.facebook.com/Marie-Eve-Lamontagne-106251165141601/?notif_id=1631723990688198&notif_t=page_fan&ref=notif"
+                        >
+                            <svg class="icon icon--lg">
+                                <use xlink:href="#icon-facebook_logo"></use>
+                            </svg>
+                        </a>
+                        <a
+                            data-scrolly="fromBottomLessQuick"
+                            href="https://www.linkedin.com/in/marie-eve-lamontagne-4285a0220/"
+                        >
+                            <svg class="icon icon--lg icon_linked">
+                                <use xlink:href="#icon-linkedin_logo"></use>
+                            </svg>
+                        </a>
+                        <a
+                            data-scrolly="fromBottomSlow"
+                            href="https://github.com/MarieHugs"
+                        >
+                            <svg class="icon icon--lg">
+                                <use xlink:href="#icon-git_logo"></use>
+                            </svg>
+                        </a>
+                        <a
+                            data-scrolly="fromBottom"
+                            href="https://www.behance.net/melamontagne"
+                        >
+                            <svg class="icon icon--xl icon_linked">
+                                <use xlink:href="#icon-behance_logo"></use>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <hr data-scrolly="fromOpacity" />
+
+                    <p data-scrolly="fromBottom" class="copyright">
+                        © 2021 - Marie-Eve Lamontagne - Développeuse web
+                    </p>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

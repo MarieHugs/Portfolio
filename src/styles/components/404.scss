@@ -1,0 +1,74 @@
+.erreur {
+    position: relative;
+}
+
+.text_404 {
+    padding: 100px 0;
+    text-align: center;
+    h1 {
+        font-size: 6rem;
+    }
+
+    .btn {
+        margin-right: 30%;
+        margin-top: 100px;
+    }
+
+    svg {
+        transform: rotate(180deg);
+    }
+}
+
+//blobs 404
+
+.blob_single1.blob_404 {
+    width: 80%;
+    height: 45%;
+    margin-top: 65%;
+    margin-right: 15%;
+    @media screen and (min-width: $breakpoint-sm) {
+        margin-top: 30%;
+    }
+    @media screen and (min-width: $breakpoint-lg) {
+        margin-top: 20%;
+    }
+    @media screen and (min-width: $breakpoint-xl) {
+        margin-top: 15%;
+    }
+}
+
+.blob_single2.blob_404 {
+    width: 5%;
+    height: 3%;
+    margin-top: -20%;
+    margin-left: 20%;
+    @media screen and (min-width: $breakpoint-sm) {
+        width: 7%;
+        height: 5%;
+        margin-top: -10%;
+    }
+    @media screen and (min-width: $breakpoint-md) {
+        margin-top: -5%;
+    }
+}
+
+.blob_single3.blob_404 {
+    width: 10%;
+    height: 5%;
+    margin-right: -10%;
+    margin-top: 100%;
+
+    @media screen and (min-width: $breakpoint-sm) {
+        margin-right: -10%;
+        margin-top: 50%;
+    }
+    @media screen and (min-width: $breakpoint-md) {
+        margin-top: 40%;
+    }
+    @media screen and (min-width: $breakpoint-lg) {
+        margin-top: 30%;
+    }
+    @media screen and (min-width: $breakpoint-xl) {
+        margin-top: 22%;
+    }
+}
