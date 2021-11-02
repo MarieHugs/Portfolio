@@ -207,9 +207,9 @@
     }
 }
 
-.video_presentation{
+.video_presentation {
     margin-top: 10%;
-    margin-bottom:100px;
+    margin-bottom: 100px;
 
     h4 {
         margin: 20px 0;
@@ -217,18 +217,16 @@
         text-align: right;
     }
 
-    .video{
+    .video {
         max-width: 70%;
-        
-        .video_media{
-          background: linear-gradient(rgba(0, 0, 0, 0.8));  
+
+        .video_media {
+            background-color: rgba(0, 0, 0, 0.8);
         }
         img {
-            
             max-width: 100%;
         }
     }
-    
 }
 
 //blobs
