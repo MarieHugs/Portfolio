@@ -1,9 +1,8 @@
 <?php 
-    echo 'this message is sent from PHP file';
 
-    $name = $POST["name"];
-    $email = $POST["email"];
-    $message = $POST["message"];
+    $name = $_POST["name"];
+    $email = $_POST["email"];
+    $message = $_POST["message"];
 
 
     if (filter_var($email, FILTER_VALIDATE_EMAIL)) {

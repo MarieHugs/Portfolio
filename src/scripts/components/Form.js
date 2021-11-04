@@ -35,7 +35,6 @@ export default class From {
 
       this.showConfirmation();
       this.xhrRequest();
-
     } else {
       console.log('fail');
     }
@@ -89,11 +88,11 @@ export default class From {
 
   xhrRequest(){
     let xhr = new XMLHttpRequest();
-      xhr.open('POST', '../mail.php', true);
+      xhr.open('POST', 'mail.php', true);
       xhr.onload = () => {
         if (xhr.readyState == 4 && xhr.status == 200) {
           let response = xhr.response;
-          console.log('response');
+          console.log(response);
         }
       };
 
